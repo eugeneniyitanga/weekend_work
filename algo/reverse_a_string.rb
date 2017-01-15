@@ -1,9 +1,8 @@
 # Complete the method called reverse_a_string that accepts a string as a parameter and 
 # returns the reverse. The one caveat: Don't use the reverse method that already
 # comes with Ruby!
-
 def reverse_a_string(string)
-
+  string.chars.sort_by.with_index { |_, i| -i }.join
 end
 
 # Driver code - don't touch anything below this line.
